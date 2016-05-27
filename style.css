@@ -1,5 +1,5 @@
-/* # Genesis Sample Child Theme
-Theme Name: Genesis Sample Theme
+/* # Genesis Demo Theme
+Theme Name: Genesis Demo Theme
 Theme URI: http://my.studiopress.com/themes/genesis/
 Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress
@@ -1483,6 +1483,13 @@ li.comment {
 	margin-bottom: 0;
 }
 
+#crush-copyright {
+  font-size: 75%;
+}
+#crush-copyright > small > a {
+  color: #68bd49;
+  font-weight: bold;
+}
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */

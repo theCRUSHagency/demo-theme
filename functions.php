@@ -29,3 +29,17 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+//* Customize Footer Credits
+remove_action( 'genesis_footer', 'genesis_do_footer');
+add_action( 'genesis_footer', 'sp_custom_footer');
+
+function sp_custom_footer() {
+  ?>
+  <div class="crush-copyright">
+    <small>
+      Copyright &copy; <?php echo date("Y"); ?> | Designed &amp; Developed by <a href="http://www.thecrushagency.com" target="blank" title="Designed and developed by the best marketing agency in Tampa and Philadelphia, The CRUSH Agency!">The CRUSH Agency</a>
+    </small>
+  </div>
+  <?php
+}
